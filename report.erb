@@ -44,8 +44,8 @@
           <tbody>
             <% cards.each do |card|%>
               <tr>
-                <td><a href="<%= card.url%>"><%= card.short_id %></a></td>
-                <td><a href="<%= card.url%>"><%= card.name %></a></td>
+                <td><a href="<%= card.url %>" target="blank"><%= card.short_id %></a></td>
+                <td><a href="<%= card.url %>" target="blank"><%= card.name %></a></td>
                 <td><%= card.started_on.localtime.strftime("%Y-%m-%d %H:%M") %></td>
                 <td><%= card.finished_on.localtime.strftime("%Y-%m-%d %H:%M") %></td>
                 <td><%= (card.cycle_time / 3600).round(2) %></td>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="medium-6 columns">
-          <p class="text-right">Generated at: <%= Time.now.strftime("%Y-%m-%d %H:%M") %></p>
+          <p class="text-right">Generated at: <%= now.strftime("%Y-%m-%d %H:%M") %></p>
         </div>
       </div>
     </footer>
