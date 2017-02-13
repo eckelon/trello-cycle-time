@@ -33,7 +33,7 @@ average_cycle_time = cards.inject(0.0) { |sum, el| sum + el.cycle_time } / cards
 
 erb = ERB.new(File.read('report.erb'))
 result = erb.result(binding)
-filename = "#{board_name.gsub(' ', '').downcase}_#{now.strftime("%Y%m%d%H%M")}.html"
+filename = "#{board_name.gsub(' ', '').downcase}_#{now.strftime("%Y%m%d")}.html"
 File.write(filename, result)
 
 csv_filename = "#{board_name.gsub(' ', '').downcase}.csv"
