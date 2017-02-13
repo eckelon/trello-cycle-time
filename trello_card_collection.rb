@@ -39,21 +39,17 @@ class TrelloCardCollection
   def calculate_started_on_from(card, actions)
     started_on = nil
     actions.each do |action|
-      if action.data.include? 'listAfter'
-        if action.data['listAfter']['name'].start_with? 'Doing'
-          if started_on.nil? or started_on > action.date
-            started_on = action.date
-          end
+      if action_for_card_being_moved_to?('Doing', action)
+        if started_on.nil? or started_on > action.date
+          started_on = action.date
         end
       end
     end
 
     actions.each do |action|
-      if action.data.include? 'list'
-        if not action.data['list']['name'].nil? and action.data['list']['name'].start_with? 'Doing'
-          if started_on.nil? or started_on > action.date
-            started_on = action.date
-          end
+      if action_for_card_created_on?('Doing', action)
+        if started_on.nil? or started_on > action.date
+          started_on = action.date
         end
       end
     end
@@ -61,24 +57,28 @@ class TrelloCardCollection
     started_on
   end
 
+  def action_for_card_being_moved_to?(list_name, action)
+    action.data.include? 'listAfter' and not action.data['listAfter']['name'].nil? and action.data['listAfter']['name'].start_with? list_name
+  end
+
+  def action_for_card_created_on?(list_name, action)
+    action.data.include? 'list' and not action.data['list']['name'].nil? and action.data['list']['name'].start_with? list_name
+  end
+
   def calculate_finished_on_from(actions)
     finished_on = nil
     actions.each do |action|
-      if action.data.include? 'listAfter'
-        if action.data['listAfter']['name'].start_with? 'Done'
-          if finished_on.nil? or finished_on < action.date
-            finished_on = action.date
-          end
+      if action_for_card_being_moved_to?('Done', action)
+        if finished_on.nil? or finished_on < action.date
+          finished_on = action.date
         end
       end
     end
 
     actions.each do |action|
-      if action.data.include? 'list'
-        if action.data['list']['name'].start_with? 'Done'
-          if finished_on.nil? or finished_on < action.date
-            finished_on = action.date
-          end
+      if action_for_card_created_on?('Done', action)
+        if finished_on.nil? or finished_on < action.date
+          finished_on = action.date
         end
       end
     end
