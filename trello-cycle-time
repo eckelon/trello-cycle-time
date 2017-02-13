@@ -3,8 +3,9 @@
 require 'optparse'
 
 require_relative 'trello_card_collection'
+
 require 'erb'
-require 'launchy'
+require 'csv'
 
 options = {}
 OptionParser.new do |opts|
@@ -24,16 +25,35 @@ raise OptionParser::MissingArgument.new(:board_name) if options[:board_name].nil
 board_name = options[:board_name]
 puts "Calculating Average Cycle Time for: #{board_name}"
 
-card_collection = TrelloCardCollection.new
 now = Time.now
+card_collection = TrelloCardCollection.new
 cards = card_collection.finished_cards_for(board_name)
 
 average_cycle_time = cards.inject(0.0) { |sum, el| sum + el.cycle_time } / cards.length
 
 erb = ERB.new(File.read('report.erb'))
 result = erb.result(binding)
-
 filename = "#{board_name.gsub(' ', '').downcase}_#{now.strftime("%Y%m%d%H%M")}.html"
 File.write(filename, result)
 
-Launchy.open(File.join(Dir.pwd, filename))
+csv_filename = "#{board_name.gsub(' ', '').downcase}.csv"
+average_cycle_time_in_hours = average_cycle_time / 3600
+average_cycle_times = []
+key = now.strftime("%d/%m/%Y")
+if File.exists? csv_filename
+  average_cycle_times = CSV.read(csv_filename)
+  index = average_cycle_times.index{ |item| item[0] == key }
+  if index.nil?
+    average_cycle_times << [key, average_cycle_time_in_hours]
+  else
+    average_cycle_times[index] = [key, average_cycle_time_in_hours]
+  end
+else
+    average_cycle_times << [key, average_cycle_time_in_hours]
+end
+
+CSV.open(csv_filename, 'wb') do |csv|
+  average_cycle_times.each do |row|
+    csv << row
+  end
+end
