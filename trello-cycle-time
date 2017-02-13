@@ -1,9 +1,30 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
 require_relative 'trello_card_collection'
 require 'erb'
 require 'launchy'
 
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: trello-cycle_time [options]"
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+
+  opts.on('-b', '--board BOARD_NAME') do |board_name|
+    options[:board_name] = board_name
+  end
+end.parse!
+raise OptionParser::MissingArgument.new(:board_name) if options[:board_name].nil?
+
+board_name = options[:board_name]
+puts "Calculating Average Cycle Time for: #{board_name}"
+
 card_collection = TrelloCardCollection.new
-board_name = 'Conecta - Tareas'
 now = Time.now
 cards = card_collection.finished_cards_for(board_name)
 
