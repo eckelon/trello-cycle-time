@@ -37,7 +37,7 @@ filename = "#{board_name.gsub(' ', '').downcase}_#{now.strftime("%Y%m%d")}.html"
 File.write(filename, result)
 
 csv_filename = "#{board_name.gsub(' ', '').downcase}.csv"
-average_cycle_time_in_hours = average_cycle_time / 3600
+average_cycle_time_in_hours = (average_cycle_time / 3600).round(2)
 average_cycle_times = []
 key = now.strftime("%d/%m/%Y")
 if File.exists? csv_filename
