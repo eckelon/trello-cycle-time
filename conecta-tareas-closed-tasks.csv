@@ -1,0 +1,141 @@
+id,name,started_on,finished_on,cycle_time,finished_on_week
+703,US95 - Añadir trámites al seed de los datos de demo,2017-03-22 14:54:06 UTC,2017-03-23 12:33:48 UTC,77982.516,12 - 2017
+692,US95 - Cuando selecciono un tramite del listado se muestra el mensaje en la conversación del asunto,2017-03-20 08:45:13 UTC,2017-03-23 12:33:45 UTC,272911.821,12 - 2017
+706,US82 - Ver una publicación de texto,2017-03-22 16:26:03 UTC,2017-03-22 18:11:51 UTC,6348.047,12 - 2017
+690,US94 - Componente para seleccionar tramite de una lista,2017-03-21 15:40:31 UTC,2017-03-23 10:41:55 UTC,154884.131,12 - 2017
+685,Mostrar la geoposición en el sidebar de una issue cuando esté geolocalizado,2017-03-17 17:58:23 UTC,2017-03-22 12:51:36 UTC,413593.171,12 - 2017
+701,US89 - Crear el componente de creación de publicaciones,2017-03-20 12:14:36 UTC,2017-03-22 12:18:34 UTC,173037.864,12 - 2017
+702,US89 - Adjuntar archivos en la creación de una publicación,2017-03-21 15:39:05 UTC,2017-03-21 15:40:24 UTC,78.221,12 - 2017
+704,US95 - Visualizar el mensaje de un trámite,2017-03-21 15:06:27 UTC,2017-03-21 15:35:52 UTC,1764.731,12 - 2017
+700,US93 - Mostrar el estado nuevo como disabled,2017-03-20 08:17:48 UTC,2017-03-20 08:26:29 UTC,520.964,12 - 2017
+694,US77 - Crear página por defecto que sustituya al dashboard de canales,2017-03-17 17:56:17 UTC,2017-03-17 17:57:50 UTC,92.617,11 - 2017
+691,"US95 - Maquetar el tipo de mensaje ""Tramite""",2017-03-17 17:06:14 UTC,2017-03-17 17:44:45 UTC,2310.695,11 - 2017
+689,US94 - Maquetar el formato de la lista de trámites,2017-03-17 16:19:07 UTC,2017-03-17 17:06:01 UTC,2813.897,11 - 2017
+695,US80 - COMO agente QUIERO ver los metadatos de un canal,2017-03-15 12:09:09 UTC,2017-03-17 13:37:20 UTC,178091.097,11 - 2017
+677,US73 - Subida de imagen de portada de nuevo canal,2017-03-08 17:59:31 UTC,2017-03-15 18:11:32 UTC,605520.745,11 - 2017
+696,US73 - Utilizar componente lista de adjuntos en la creación de canal,2017-03-15 15:11:07 UTC,2017-03-15 16:59:27 UTC,6500.358,11 - 2017
+678,US73 - Extraer componente para la lista de adjuntos,2017-03-13 14:40:29 UTC,2017-03-15 15:11:03 UTC,174633.315,11 - 2017
+322,"Hacer las páginas de error html (404, 503 y Mantenimiento)",2017-01-20 11:15:54 UTC,2017-03-15 12:16:09 UTC,4669215.4,11 - 2017
+693,US77 - COMO agente QUIERO ver los Canales a los que tengo acceso,2017-03-14 18:19:28 UTC,2017-03-15 12:09:09 UTC,64180.542,11 - 2017
+688,"US93 - En la lista de asuntos, poder filtrar por estado ""nuevo""",2017-03-14 17:18:46 UTC,2017-03-14 17:31:58 UTC,792.226,11 - 2017
+684,"US93 - Eliminar visibilidad de estado de ""Nuevo"" (selector de cambio de estado en detalle de asunto)",2017-03-14 17:08:52 UTC,2017-03-14 17:18:43 UTC,591.128,11 - 2017
+687,"US93 - Mostrar Indicador para asunto en estado ""nuevo"", visible en la lista de asuntos",2017-03-14 16:19:17 UTC,2017-03-14 17:13:33 UTC,3255.766,11 - 2017
+228,Todos los selects deben tener un option con selected por defecto,2016-06-29 14:22:10 UTC,2017-03-14 11:08:01 UTC,22279551.025,11 - 2017
+513,"US46 - Al hacer cambios en el detalle de un asunto y si da un error de servidor, debe mostrarse un toast además del icono de warning,",2017-03-13 18:00:08 UTC,2017-03-13 18:47:08 UTC,2820.547,11 - 2017
+673,US73 - El administrador puede crear un nuevo canal,2017-03-08 16:21:52 UTC,2017-03-14 16:58:47 UTC,520614.65,11 - 2017
+682,No se pueden eliminar los recordatorios de algunos asuntos (887 en demo),2017-03-13 15:21:42 UTC,2017-03-13 16:03:34 UTC,2512.174,11 - 2017
+608,Cambiar icono y título del menú de qlik (cuadro de mando) y añadir un submenú en el sidebar,2017-02-13 18:52:32 UTC,2017-02-13 18:52:45 UTC,13.679,07 - 2017
+563,Cambiar los id de autoincrement a UUIDs,2017-01-26 08:44:19 UTC,2017-02-01 12:27:31 UTC,531791.595,05 - 2017
+577,Spike: fake del servicio http para que trabaje con listas de objetos en localStorage,2017-01-29 17:32:35 UTC,2017-01-29 17:36:54 UTC,259.494,04 - 2017
+602,US55 - Añadir y mostrar mensajes de tipo geolocalización,2017-02-11 11:09:31 UTC,2017-02-11 16:30:42 UTC,19271.585,06 - 2017
+601,US58 - Añadir y mostrar mensajes de tipo destacado,2017-02-10 19:11:04 UTC,2017-02-11 11:06:11 UTC,57306.694,06 - 2017
+600,US56 - Añadir y mostrar mensajes de tipo video de youtube y vimeo,2017-02-10 19:08:33 UTC,2017-02-10 19:08:40 UTC,7.556,06 - 2017
+569,US47- Integrar librerias integración Qlik Sense en el WebPack,2017-02-01 13:03:46 UTC,2017-02-10 12:20:56 UTC,775030.245,06 - 2017
+599,US58 - UI del mensaje tipo destacado,2017-02-10 08:53:14 UTC,2017-02-10 09:57:19 UTC,3844.452,06 - 2017
+598,US57 - UI de mensaje tipo audio,2017-02-09 18:28:55 UTC,2017-02-09 18:32:04 UTC,188.883,06 - 2017
+597,US56 - UI de mensaje tipo video,2017-02-09 17:46:58 UTC,2017-02-09 17:53:49 UTC,411.203,06 - 2017
+596,US55 - UI de mensaje tipo geolocalización,2017-02-09 17:11:56 UTC,2017-02-09 17:27:36 UTC,940.753,06 - 2017
+573,US49 - Editar una lista existente,2017-01-27 16:53:07 UTC,2017-02-07 13:15:13 UTC,937325.897,06 - 2017
+584,US49 - Modificar el componente de creación/edición de listas,2017-02-06 16:40:54 UTC,2017-02-07 13:14:11 UTC,73997.133,06 - 2017
+585,US47 - Solucionar tamaño de menu pequeño en el template de página de Qlik,2017-02-07 11:48:48 UTC,2017-02-07 13:12:11 UTC,5002.767,06 - 2017
+582,Listas de asuntos: Mostrar id corto en asunto relacionado,2017-02-03 12:03:56 +0100,2017-02-07 12:17:44 UTC,350028.874,06 - 2017
+583,Sidebar: La capa de notification-band tapa los eventos de click debajo suyo,2017-02-06 12:46:01 +0100,2017-02-07 11:00:09 UTC,83648.632,06 - 2017
+581,US53 - Crear el componente para mostrar las personas asociadas a una lista,2017-02-02 17:45:15 UTC,2017-02-06 16:27:14 UTC,340918.962,06 - 2017
+503,US44 - Interacción de búsqueda en el frontend con un botón de buscar para el listado de personas,2017-01-18 11:26:35 UTC,2017-02-07 10:21:37 UTC,1724101.974,06 - 2017
+565,US48 - UX de los nuevos campos de personas,2017-02-03 10:45:12 UTC,2017-02-07 09:39:54 UTC,341681.236,06 - 2017
+580,US52 - Implementar el sidebar de listas en el módulo de personas,2017-02-02 16:05:22 UTC,2017-02-02 16:46:12 UTC,2450.114,05 - 2017
+578,Automatizar la creación de ficheros de componente,2017-02-01 08:34:12 UTC,2017-02-01 10:07:06 UTC,5573.829,05 - 2017
+572,US49 - Crear nueva lista con nombre,2017-01-27 16:52:46 UTC,2017-01-31 18:32:10 UTC,351563.681,05 - 2017
+554,U3 - Truncar los títulos en el listado de respuestas predefinidas,2017-01-20 11:26:06 UTC,2017-01-31 18:23:04 UTC,975417.781,05 - 2017
+551,"Listado de asuntos y edición en lote: Tras cerrar la modal de edición en lote, salen los asuntos repetidos",2017-01-31 11:04:59 UTC,2017-01-31 16:37:19 UTC,19940.026,05 - 2017
+575,US49 - Ver listas de personas ya creadas,2017-01-27 16:55:42 UTC,2017-01-29 17:41:24 UTC,175541.785,04 - 2017
+469,"Revisión de mensajes de error: colores, tipos, posición…",2017-01-20 08:58:37 UTC,2017-01-30 11:18:23 UTC,872386.64,05 - 2017
+644,Listados personas > Hacer que los emails queden truncados en la lista,2017-02-24 12:14:16 UTC,2017-02-24 12:16:35 UTC,139.392,08 - 2017
+642,Error 401 aleatorio en frontend,2017-02-24 09:13:06 UTC,2017-02-24 09:37:53 UTC,1486.937,08 - 2017
+643,US55 - Añadir Markers a los mapas de geolocalización,2017-02-24 08:58:40 UTC,2017-02-24 09:37:54 UTC,2353.557,08 - 2017
+638,US59 - Issue.attach_by_a_person debe ser reemplazado por un mensaje,2017-02-24 09:40:44 UTC,2017-02-25 16:34:29 UTC,111224.832,08 - 2017
+555,Error al editar título de un asunto: Expression has changed after it was checked. Previous value: 'false'. Current value: 'true'.,2017-02-23 16:53:45 UTC,2017-02-24 17:45:57 UTC,89531.703,08 - 2017
+645,US59 - Utilizar IssueMessageRepository al enviar el mensaje al ciudadano,2017-02-24 12:36:40 UTC,2017-02-24 13:11:42 UTC,2102.306,08 - 2017
+639,US59 - Comprobar la lógica de leido de mensajes con la nueva persistencia,2017-02-24 10:18:30 UTC,2017-02-24 12:36:25 UTC,8275.217,08 - 2017
+640,Cambiar representaciones de persona (summary y detail),2017-02-23 11:33:41 UTC,2017-02-24 09:11:19 UTC,77857.717,08 - 2017
+632,"US48 - Ajustar estilos de los campos  complejos de persona (por ejemplo, full_address)",2017-02-22 11:22:39 +0100,2017-02-23 18:33:30 UTC,115851.559,08 - 2017
+633,US59 - Aumentar la resolucion de los created_on de los timestamps para que incluyan los milisegundos,2017-02-23 11:33:21 UTC,2017-02-23 17:02:54 UTC,19772.371,08 - 2017
+605,La lista de personas paginada siempre trae los mismos resultados,2017-02-22 18:49:02 UTC,2017-02-23 16:51:52 UTC,79370.114,08 - 2017
+636,US59 - Añadir un tipo de mensaje para cuando se desasigna una tarea de un agente,2017-02-23 15:45:47 UTC,2017-02-23 16:47:47 UTC,3720.447,08 - 2017
+641,US48 - Visualizar los mapas estáticos en la ficha de de persona,2017-02-23 12:14:01 UTC,2017-02-23 12:32:08 UTC,1086.503,08 - 2017
+588,US55 - Meter API Key de Google Maps como configuración del front para los mensajes geolocalizados,2017-02-17 11:11:15 UTC,2017-02-23 11:16:37 UTC,518721.988,08 - 2017
+594,US48 - Presentar los nuevos datos de persona en la ficha de persona,2017-02-09 11:24:12 UTC,2017-02-23 10:46:08 UTC,1207315.614,08 - 2017
+622,US48 - Añadir source y level desde el exterior del constructor de la entidad persona,2017-02-23 10:45:45 UTC,2017-02-23 10:45:52 UTC,7.009,08 - 2017
+593,US48 - Enviar nuevos datos de persona en el endpoint,2017-02-09 11:23:46 UTC,2017-02-23 10:45:36 UTC,1207309.737,08 - 2017
+634,US59 - Añadir un tipo de mensaje para cuando se cierra una tarea,2017-02-22 12:29:16 UTC,2017-02-23 10:41:09 UTC,79912.501,08 - 2017
+624,US59 - Añadir un endpoint HTTP para traer todos los mensajes que son publicos para la aplicación móvil para personas,2017-02-22 11:16:00 UTC,2017-02-22 12:12:24 UTC,3383.743,08 - 2017
+625,"US59 - Cuando se crea un nuevo asunto por una persona, hay que añadir el mensaje utilizando el issue_messages_service_creator",2017-02-22 09:59:11 UTC,2017-02-22 10:35:48 UTC,2196.742,08 - 2017
+590,US48 - Modificar el seed de persons para añadir los nuevos campos,2017-02-09 11:20:22 UTC,2017-02-20 10:28:22 UTC,947280.465,08 - 2017
+631,US59 - Traer la información de person y agent mediante un join cuando nos traemos los mensajes en lugar de en la creación del mensaje,2017-02-17 15:59:10 UTC,2017-02-20 10:24:54 UTC,239143.916,08 - 2017
+627,US59 - Extraer el contenido de los mensajes a un value object,2017-02-17 12:02:51 UTC,2017-02-20 10:45:42 UTC,254570.973,08 - 2017
+628,US59 - Modificar IssueBatchMessages send para que utilice issue message services,2017-02-17 10:59:21 UTC,2017-02-17 12:02:39 UTC,3798.035,07 - 2017
+621,US59 - Eliminar código sin utilizar de los mensajes en issue,2017-02-16 14:55:44 UTC,2017-02-17 11:19:39 UTC,73434.544,07 - 2017
+626,"US59 - Cuando se crea un nuevo asunto por un agente, hay que añadir el mensaje utilizando el issue_messages_service_creator",2017-02-17 09:48:46 UTC,2017-02-17 10:48:16 UTC,3569.721,07 - 2017
+603,US55 - Mostrar mensajes de geolocalización con google maps API,2017-02-15 09:26:34 UTC,2017-02-16 16:04:40 UTC,110285.917,07 - 2017
+617,US48 - Añadir campo cuenta bancaria a persona,2017-02-16 15:28:40 UTC,2017-02-16 16:12:41 UTC,2641.339,07 - 2017
+623,Eliminar de verdad módulo de Styleguide,2017-02-16 15:45:20 UTC,2017-02-16 15:55:29 UTC,608.714,07 - 2017
+595,US59 - Conversación > La conversación no muestra mi mensaje enviado. Al recargar se ve sólo texto pero no las imágenes de mi mensaje,2017-02-16 13:01:37 UTC,2017-02-16 13:13:45 UTC,727.601,07 - 2017
+618,US59 - Todos los mensajes destacados pueden llevar adjuntos,2017-02-15 10:08:34 UTC,2017-02-16 13:01:15 UTC,96760.104,07 - 2017
+556,"Error al enviar un mensaje en lote: ""this.backendService.sendBatchMessage is not a function""",2017-02-15 17:08:25 UTC,2017-02-15 17:40:47 UTC,1941.568,07 - 2017
+592,US48 - Modificar entity persons para que gestionar nivel y fuente de todos los campos,2017-02-09 11:23:02 UTC,2017-02-15 17:32:17 UTC,540555.034,07 - 2017
+591,US48 - Añadir nuevos campos a la entity person,2017-02-09 11:20:58 UTC,2017-02-15 17:32:14 UTC,540675.499,07 - 2017
+610,Mover Qlick en la barra superior a la izquierda de configuración,2017-02-15 09:11:34 UTC,2017-02-15 17:07:21 UTC,28547.192,07 - 2017
+607,"El estilo de ""ruta activa"" del menú superior se pierde cuando entramos en una opción del menu sidebar",2017-02-15 11:36:05 UTC,2017-02-15 16:52:21 UTC,18975.283,07 - 2017
+589,US48 - Crear migración para nuevos campos de persona,2017-02-09 11:17:13 UTC,2017-02-15 11:48:05 UTC,520251.739,07 - 2017
+536,Error cuando volvemos atrás desde el detalle de un asunto,2017-01-18 16:24:38 UTC,2017-02-15 16:58:39 UTC,2421240.883,07 - 2017
+586,Configuración > Grupos > Eliminados da un error de consola,2017-02-15 09:51:42 UTC,2017-02-15 09:59:30 UTC,468.204,07 - 2017
+566,US59 - Extraer la persistencia de Message fuera de Issues,2017-01-26 11:41:44 UTC,2017-02-15 09:50:00 UTC,1721295.405,07 - 2017
+553,Envolver router con un servicio nuestro para testear más fácilmente la navegación entre rutas,2017-01-20 10:09:07 UTC,2017-02-15 09:32:00 UTC,2244173.802,07 - 2017
+587,US54 - Implementar el componente de asignación de una persona a una lista existente,2017-02-07 16:01:47 UTC,2017-02-15 00:51:54 UTC,636606.843,07 - 2017
+616,US56 - Añadir checks de leído a mensajes de vídeo y otros.,2017-02-14 11:05:38 UTC,2017-02-14 11:06:49 UTC,71.327,07 - 2017
+615,US56 - Arreglar visualización de contenido en mensajes tipo vídeo,2017-02-14 10:44:18 UTC,2017-02-14 11:02:59 UTC,1120.373,07 - 2017
+613,US58 - Arreglar visualización en el metadato de mensaje extendido,2017-02-14 10:21:40 UTC,2017-02-14 10:22:19 UTC,38.632,07 - 2017
+614,Arreglar icono de avatar por defecto.,2017-02-14 10:24:33 UTC,2017-02-14 10:29:01 UTC,268.309,07 - 2017
+652,--------,2017-03-01 09:11:05 UTC,2017-03-13 16:03:24 UTC,1061539.545,11 - 2017
+680,HTTPS + HTTP2 en la máquina de demo,2017-03-10 17:14:16 UTC,2017-03-10 17:14:22 UTC,5.642,10 - 2017
+660,Mostrar fechas amigables en las conversaciones,2017-03-02 17:05:51 UTC,2017-03-03 12:44:09 UTC,70697.609,09 - 2017
+650,Código Cuenta Cliente (CCC) en persona tiene que ser un IBAN,2017-03-01 11:20:39 UTC,2017-03-01 12:02:29 UTC,2509.071,09 - 2017
+683,"Navegando entre rutas a veces aparece el error ""cannot find primary outlet""",2017-03-13 13:26:03 UTC,2017-03-13 13:26:09 UTC,6.204,11 - 2017
+664,Cambiar la configuración de envío de SMS para el entorno de test de http,2017-03-03 11:30:46 UTC,2017-03-03 11:44:04 UTC,798.524,09 - 2017
+629,Edición en lote > Unificar textos por defecto de los selects,2017-02-17 12:13:30 UTC,2017-03-10 11:38:18 UTC,1812287.983,10 - 2017
+443,"El cambiar el asunto padre de ninguno a alguno (y viceversa) debe mostrar/ocultar el enlace ""Ver asunto padre""",2017-03-03 11:47:14 UTC,2017-03-03 17:04:29 UTC,19034.699,09 - 2017
+535,"Listados de asuntos: Si no hemos seleccionado ningún asunto, el formulario de ""Nuevo asunto padre"" no debería mostrar el campo de ""Asuntos hijos seleccionados""",2017-03-06 15:45:15 UTC,2017-03-07 11:08:42 UTC,69806.899,10 - 2017
+353,"Creación de un nuevo asunto padre: Cuando creo un padre sin haber elegido hijos anteriormente, aparece un campo que pone ""Asuntos hijos seleccionados"" pero está vacío y no es editable",2017-02-28 17:48:29 UTC,2017-03-01 16:35:43 UTC,82033.131,09 - 2017
+514,"Asunto padre sidebar: si estamos viendo el listado de asuntos hijos de un padre, no debería salir la notificación amarilla que enlaza con ver los asuntos hijos.",2017-03-03 17:18:08 UTC,2017-03-03 18:04:45 UTC,2797.656,09 - 2017
+557,"Modal edición en lote: posibilidad de dejar campos ""Sin cambios""",2017-03-02 08:54:57 UTC,2017-03-07 16:59:04 UTC,461047.073,10 - 2017
+665,Al editar un grupo desaparecen el bloque central de navegación y el formulario de añadir agentes,2017-03-03 18:09:41 UTC,2017-03-03 18:14:41 UTC,300.608,09 - 2017
+674,US74 - El administrador puede editar un canal existente,2017-03-09 16:48:02 UTC,2017-03-09 18:32:03 UTC,6240.917,10 - 2017
+672,US72 - El administrador puede eliminar un canal existente en el listado,2017-03-08 15:36:14 UTC,2017-03-09 15:34:47 UTC,86313.536,10 - 2017
+675,US65 - Extraer un componente para cada tipo de mensaje,2017-03-08 08:10:56 UTC,2017-03-08 10:23:14 UTC,7937.351,10 - 2017
+671,US71 - Crear listado de canales existentes para un administrador,2017-03-07 17:25:28 UTC,2017-03-08 10:33:41 UTC,61692.999,10 - 2017
+669,US65 - Animar IssueMessage cuando hay un cambio de estado,2017-03-07 09:12:34 UTC,2017-03-07 15:28:02 UTC,22527.533,10 - 2017
+670,US66 - Añadir mensajes de Asignación con el nombre del Grupo,2017-03-07 11:45:50 UTC,2017-03-08 09:11:18 UTC,77127.924,10 - 2017
+655,US64 - Filtrar lista de asuntos por resultado de encuesta,2017-03-03 10:07:39 UTC,2017-03-07 09:58:13 UTC,345033.561,10 - 2017
+667,US65 - Añadir mensaje para el cambio de estado cerrado,2017-03-07 09:21:16 UTC,2017-03-07 13:12:59 UTC,13903.175,10 - 2017
+666,US65 - Añadir mensaje para el cambio de estado de abierto,2017-03-07 08:31:08 UTC,2017-03-07 09:11:59 UTC,2451.199,10 - 2017
+668,US65 - Añadir mensaje para el cambio de estado en espera,2017-03-07 09:04:36 UTC,2017-03-07 09:07:52 UTC,195.996,10 - 2017
+300,Añadir loader y ok al botón Añadir agentes en edición de grupo,2017-03-03 18:10:14 UTC,2017-03-03 18:24:59 UTC,885.717,09 - 2017
+442,"El cambiar asunto padre debe cambiar inmediatamente el enlace de ""Ver asunto padre"" al nuevo padre",2017-03-05 22:12:04 UTC,2017-03-05 22:24:14 UTC,730.555,09 - 2017
+656,US64- Añadir resultados de encuestas a asuntos en seed,2017-03-03 09:17:53 UTC,2017-03-03 11:45:33 UTC,8860.449,09 - 2017
+662,US66 - Estilos para mostrar cambios de estado en las conversaciones,2017-03-03 09:40:19 UTC,2017-03-03 09:40:49 UTC,29.57,09 - 2017
+663,US66 - Estilos para mostrar cambios de asignación en la conversación,2017-03-03 09:42:04 UTC,2017-03-03 10:09:57 UTC,1672.814,09 - 2017
+654,US64 - Definir interfaz para filtrar asunto por resultado de encuesta,2017-03-03 09:15:17 UTC,2017-03-03 09:33:40 UTC,1103.194,09 - 2017
+661,Ocultar la barra de progreso tras enviar un mensaje con adjunto/s subido/s,2017-03-03 08:51:18 UTC,2017-03-03 09:14:52 UTC,1413.445,09 - 2017
+606,US51 - Fijar la geoposición de un asunto,2017-03-02 13:18:29 UTC,2017-03-02 19:00:51 UTC,20542.662,09 - 2017
+657,"US67 - Cuando un ciudadano mande un mensaje a un asunto en estado CERRADO, cambiar el estado de forma automática a ABIERTO",2017-03-02 12:34:17 UTC,2017-03-02 17:06:41 UTC,16344.719,09 - 2017
+653,US70 - Está escapando el HTML de los texto que sean un enlace,2017-03-02 09:46:30 UTC,2017-03-02 09:59:13 UTC,763.572,09 - 2017
+647,US57 - Añadir y mostrar mensajes de tipo audio,2017-02-25 16:34:22 UTC,2017-03-02 16:57:26 UTC,433384.59,09 - 2017
+658,US59 - Añadir información sobre quien ha cambiado la asignación de un agente a un asunto,2017-03-02 08:42:49 UTC,2017-03-02 08:47:40 UTC,291.341,09 - 2017
+659,US59 - Añadir información sobre quien ha desasignado un asunto,2017-03-02 08:35:08 UTC,2017-03-02 08:42:47 UTC,458.997,09 - 2017
+446,Extraer un componente para las imágenes subidas y hacer la carga via AJAX,2017-03-02 08:28:00 UTC,2017-03-02 08:28:28 UTC,28.45,09 - 2017
+635,US59 - Añadir un tipo de mensaje para cuando se asigna una tarea a un agente,2017-02-23 16:52:15 UTC,2017-03-01 12:48:16 UTC,503760.947,09 - 2017
+637,US59 - Añadir un tipo de mensaje con la respuesta de la encuesta de satisfacción,2017-02-27 09:44:14 UTC,2017-03-01 09:10:08 UTC,170753.992,09 - 2017
+651,US59 - Registrar quien ha iniciado una acción que desencadena un issue_message,2017-02-28 12:18:37 UTC,2017-02-28 17:11:19 UTC,17561.82,09 - 2017
+648,US57 - Añadir ficheros adjuntos a los asuntos creados en el seed,2017-02-25 16:46:28 UTC,2017-02-28 17:11:16 UTC,260687.389,09 - 2017
+649,US68 - Ajustar estilos para el componente de listas cuando hay botón y cuando no,2017-02-28 11:14:48 UTC,2017-02-28 17:11:32 UTC,21403.711,09 - 2017
+646,US68 - Componente para las listas cerradas,2017-02-24 18:33:57 UTC,2017-02-28 17:11:34 UTC,340657.432,09 - 2017

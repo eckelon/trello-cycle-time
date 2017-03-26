@@ -13,4 +13,8 @@ class Card
   def cycle_time
     finished_on - started_on
   end
+
+  def finished_on_week
+    finished_on.strftime("%W - %Y")
+  end
 end
