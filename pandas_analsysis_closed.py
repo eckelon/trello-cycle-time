@@ -1,4 +1,5 @@
 import os
+from collections import OrderedDict
 from datetime import datetime
 
 import pandas as pd
@@ -52,7 +53,9 @@ results = [
     )
 ]
 
-r = render('report.j2', board_name='Conecta - Tareas', results=results, now=datetime.now())
+cycle_time_trend = grouped['cycle_time'].agg(lambda x: x.mean() / 3600).to_dict()
+
+r = render('report.j2', board_name='Conecta - Tareas', results=results, now=datetime.now(), cycle_time_trend=OrderedDict(sorted(cycle_time_trend.items())))
 print r
 
 #print dataset.describe()

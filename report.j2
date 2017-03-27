@@ -52,6 +52,13 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout">
+              <canvas id="cycle_time_trend"></canvas>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="row">
@@ -99,5 +106,20 @@
           </div>
         </div>
       </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+      <script>
+var ctx = document.getElementById("cycle_time_trend");
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: {{ cycle_time_trend.keys() }},
+    datasets: [{
+      label: 'Average Cycle Time (in hours)',
+      data: {{ cycle_time_trend.values() }}
+    }]
+  }
+});
+      </script>
   </body>
 </html>
