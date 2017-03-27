@@ -61,7 +61,6 @@ dataset = pd.read_csv(filename, parse_dates=True, infer_datetime_format=True)
 
 grouped = dataset.groupby('finished_on_week')
 weeks = sorted([name for name, groups in dataset.groupby('finished_on_week')], key=functools.cmp_to_key(week_and_year_ordering))
-print weeks
 
 results = [
     Result(
