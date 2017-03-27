@@ -128,6 +128,12 @@ var cycle_time_trend_chart = new Chart(ctx, {
     datasets: [{
       label: 'Average Cycle Time (in hours)',
       data: {{ cycle_time_trend.values() }}
+    }, {
+      label: 'Average Cycle Time for all time',
+      data: {{ [results[2].cycle_time.round(2)] * cycle_time_trend|length }},
+      borderColor: "#d7ecfa",
+      backgroundColor: "#d7ecfa",
+      fill: false,
     }]
   }
 });
@@ -138,9 +144,18 @@ var throughput_trend = new Chart(ctx, {
   data: {
     labels: {{ throughput_trend.keys() }},
     datasets: [{
+      type: 'bar',
       label: 'Cards moved to done (per week)',
       data: {{ throughput_trend.values() }}
-    }]
+    } , {
+      type: 'line',
+      label: 'Average Cards moved to done for all time',
+      data: {{ [results[2].throughput.round(2)] * throughput_trend|length }},
+      borderColor: "#d7ecfa",
+      backgroundColor: "#d7ecfa",
+      fill: false,
+    }
+    ]
   }
 });
       </script>
