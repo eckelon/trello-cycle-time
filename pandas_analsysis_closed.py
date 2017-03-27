@@ -54,8 +54,15 @@ results = [
 ]
 
 cycle_time_trend = grouped['cycle_time'].agg(lambda x: x.mean() / 3600).to_dict()
+throughput_trend = grouped['id'].agg(lambda x: x.count()).to_dict()
 
-r = render('report.j2', board_name='Conecta - Tareas', results=results, now=datetime.now(), cycle_time_trend=OrderedDict(sorted(cycle_time_trend.items())))
+r = render('report.j2',
+           board_name='Conecta - Tareas',
+           results=results,
+           now=datetime.now(),
+           cycle_time_trend=OrderedDict(sorted(cycle_time_trend.items())),
+           throughput_trend=OrderedDict(sorted(throughput_trend.items()))
+           )
 print r
 
 #print dataset.describe()
