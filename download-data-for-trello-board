@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+require_relative 'trello_card_collection'
+
+require 'erb'
+require 'csv'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: trello-cycle_time [options]"
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+
+  opts.on('-b', '--board BOARD_NAME') do |board_name|
+    options[:board_name] = board_name
+  end
+end.parse!
+raise OptionParser::MissingArgument.new(:board_name) if options[:board_name].nil?
+
+board_name = options[:board_name]
+puts "Downloading data from Trello for: #{board_name}"
+
+card_collection = TrelloCardCollection.new
+cards = card_collection.finished_cards_for(board_name)
+
+csv_filename_closed_tasks = "#{board_name.gsub(' ', '').downcase}.csv"
+CSV.open(csv_filename_closed_tasks, 'wb') do |csv|
+  csv << [:id, :name, :started_on, :finished_on, :cycle_time, :finished_on_week]
+  cards.each do |card|
+    csv << [card.short_id, card.name, card.started_on, card.finished_on, card.cycle_time, card.finished_on_week]
+  end
+end
