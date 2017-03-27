@@ -9,11 +9,10 @@ import matplotlib.pyplot as plt
 import jinja2
 
 parser = argparse.ArgumentParser(description="Generate kanban metrics for a trello board as csv")
-
 parser.add_argument('board')
-parser.add_argument('filename', type=file)
 
 args = parser.parse_args()
+filename = args.board.replace(' ', '').lower() + '.csv'
 
 class Result(object):
 
@@ -36,7 +35,7 @@ def render(template_path, **context):
         loader=jinja2.FileSystemLoader(path or './')
     ).get_template(filename).render(context)
 
-dataset = pd.read_csv(args.filename.name, parse_dates=True, infer_datetime_format=True)
+dataset = pd.read_csv(filename, parse_dates=True, infer_datetime_format=True)
 
 grouped = dataset.groupby('finished_on_week')
 weeks = [name for name, groups in dataset.groupby('finished_on_week')]
@@ -63,7 +62,7 @@ cycle_time_trend = grouped['cycle_time'].agg(lambda x: x.mean() / 3600).to_dict(
 throughput_trend = grouped['id'].agg(lambda x: x.count()).to_dict()
 
 
-with open(args.filename.name.replace('csv', 'html'), 'wb') as file_:
+with open(filename.replace('csv', 'html'), 'wb') as file_:
     report = render('report.j2',
                       board_name=args.board,
                       results=results,

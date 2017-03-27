@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+echo "Downloading trello board: $1"
+./download-data-for-trello-board --board "$1"
+
+echo "Generating metrics"
+./generate-report-for-board "$1"

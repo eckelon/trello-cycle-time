@@ -23,7 +23,6 @@ end.parse!
 raise OptionParser::MissingArgument.new(:board_name) if options[:board_name].nil?
 
 board_name = options[:board_name]
-puts "Downloading data from Trello for: #{board_name}"
 
 card_collection = TrelloCardCollection.new
 cards = card_collection.finished_cards_for(board_name)
