@@ -1,10 +1,19 @@
+#!/usr/bin/env python
 import os
+import argparse
 from collections import OrderedDict
 from datetime import datetime
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import jinja2
+
+parser = argparse.ArgumentParser(description="Generate kanban metrics for a trello board as csv")
+
+parser.add_argument('board')
+parser.add_argument('filename', type=file)
+
+args = parser.parse_args()
 
 class Result(object):
 
@@ -27,10 +36,7 @@ def render(template_path, **context):
         loader=jinja2.FileSystemLoader(path or './')
     ).get_template(filename).render(context)
 
-
-filename = 'conecta-tareas-closed-tasks.csv'
-
-dataset = pd.read_csv(filename, parse_dates=True, infer_datetime_format=True)
+dataset = pd.read_csv(args.filename.name, parse_dates=True, infer_datetime_format=True)
 
 grouped = dataset.groupby('finished_on_week')
 weeks = [name for name, groups in dataset.groupby('finished_on_week')]
@@ -56,18 +62,13 @@ results = [
 cycle_time_trend = grouped['cycle_time'].agg(lambda x: x.mean() / 3600).to_dict()
 throughput_trend = grouped['id'].agg(lambda x: x.count()).to_dict()
 
-r = render('report.j2',
-           board_name='Conecta - Tareas',
-           results=results,
-           now=datetime.now(),
-           cycle_time_trend=OrderedDict(sorted(cycle_time_trend.items())),
-           throughput_trend=OrderedDict(sorted(throughput_trend.items()))
-           )
-print r
 
-#print dataset.describe()
-
-#dataset.plot()
-#dataset.plot.hist()
-#
-#plt.show()
+with open(args.filename.name.replace('csv', 'html'), 'wb') as file_:
+    report = render('report.j2',
+                      board_name=args.board,
+                      results=results,
+                      now=datetime.now(),
+                      cycle_time_trend=OrderedDict(sorted(cycle_time_trend.items())),
+                      throughput_trend=OrderedDict(sorted(throughput_trend.items()))
+                      )
+    file_.write(report)
