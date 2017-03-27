@@ -32,7 +32,7 @@
               <h5>This week
                 <span class="float-right"> {{ results[0].period }} </span>
               </h5>
-              <div class="stat">
+              <div class="stat" title="{{ (results[0].cycle_time / 24).round(2) }} days">
                 {{ results[0].cycle_time.round(2) }} hours
               </div>
             </div>
@@ -40,7 +40,7 @@
           <div class="large-4 columns">
             <div class="callout">
               <h5>Last 3 weeks</h5>
-              <div class="stat">
+              <div class="stat" title="{{ (results[1].cycle_time / 24).round(2) }} days">
                 {{ results[1].cycle_time.round(2) }} hours
               </div>
             </div>
@@ -48,7 +48,7 @@
           <div class="large-4 columns">
             <div class="callout">
               <h5>Total</h5>
-              <div class="stat">
+              <div class="stat" title="{{ (results[2].cycle_time / 24).round(2) }} days">
                 {{ results[2].cycle_time.round(2) }} hours
               </div>
             </div>
