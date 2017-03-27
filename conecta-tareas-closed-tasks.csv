@@ -1,9 +1,14 @@
 id,name,started_on,finished_on,cycle_time,finished_on_week
+685,Mostrar la geoposición en el sidebar de una issue cuando esté geolocalizado,2017-03-17 17:58:23 UTC,2017-03-22 12:51:36 UTC,413593.171,12 - 2017
+682,No se pueden eliminar los recordatorios de algunos asuntos (887 en demo),2017-03-13 15:21:42 UTC,2017-03-13 16:03:34 UTC,2512.174,11 - 2017
+513,"US46 - Al hacer cambios en el detalle de un asunto y si da un error de servidor, debe mostrarse un toast además del icono de warning,",2017-03-13 18:00:08 UTC,2017-03-13 18:47:08 UTC,2820.547,11 - 2017
+228,Todos los selects deben tener un option con selected por defecto,2016-06-29 14:22:10 UTC,2017-03-14 11:08:01 UTC,22279551.025,11 - 2017
+322,"Hacer las páginas de error html (404, 503 y Mantenimiento)",2017-01-20 11:15:54 UTC,2017-03-15 12:16:09 UTC,4669215.4,11 - 2017
+705,US84 - Ver adjuntos tipo imagen en una publicación (todas las imágenes de igual tamaño),2017-03-23 16:15:46 UTC,2017-03-27 08:40:42 UTC,318296.025,13 - 2017
 703,US95 - Añadir trámites al seed de los datos de demo,2017-03-22 14:54:06 UTC,2017-03-23 12:33:48 UTC,77982.516,12 - 2017
 692,US95 - Cuando selecciono un tramite del listado se muestra el mensaje en la conversación del asunto,2017-03-20 08:45:13 UTC,2017-03-23 12:33:45 UTC,272911.821,12 - 2017
 706,US82 - Ver una publicación de texto,2017-03-22 16:26:03 UTC,2017-03-22 18:11:51 UTC,6348.047,12 - 2017
 690,US94 - Componente para seleccionar tramite de una lista,2017-03-21 15:40:31 UTC,2017-03-23 10:41:55 UTC,154884.131,12 - 2017
-685,Mostrar la geoposición en el sidebar de una issue cuando esté geolocalizado,2017-03-17 17:58:23 UTC,2017-03-22 12:51:36 UTC,413593.171,12 - 2017
 701,US89 - Crear el componente de creación de publicaciones,2017-03-20 12:14:36 UTC,2017-03-22 12:18:34 UTC,173037.864,12 - 2017
 702,US89 - Adjuntar archivos en la creación de una publicación,2017-03-21 15:39:05 UTC,2017-03-21 15:40:24 UTC,78.221,12 - 2017
 704,US95 - Visualizar el mensaje de un trámite,2017-03-21 15:06:27 UTC,2017-03-21 15:35:52 UTC,1764.731,12 - 2017
@@ -15,15 +20,11 @@ id,name,started_on,finished_on,cycle_time,finished_on_week
 677,US73 - Subida de imagen de portada de nuevo canal,2017-03-08 17:59:31 UTC,2017-03-15 18:11:32 UTC,605520.745,11 - 2017
 696,US73 - Utilizar componente lista de adjuntos en la creación de canal,2017-03-15 15:11:07 UTC,2017-03-15 16:59:27 UTC,6500.358,11 - 2017
 678,US73 - Extraer componente para la lista de adjuntos,2017-03-13 14:40:29 UTC,2017-03-15 15:11:03 UTC,174633.315,11 - 2017
-322,"Hacer las páginas de error html (404, 503 y Mantenimiento)",2017-01-20 11:15:54 UTC,2017-03-15 12:16:09 UTC,4669215.4,11 - 2017
 693,US77 - COMO agente QUIERO ver los Canales a los que tengo acceso,2017-03-14 18:19:28 UTC,2017-03-15 12:09:09 UTC,64180.542,11 - 2017
 688,"US93 - En la lista de asuntos, poder filtrar por estado ""nuevo""",2017-03-14 17:18:46 UTC,2017-03-14 17:31:58 UTC,792.226,11 - 2017
 684,"US93 - Eliminar visibilidad de estado de ""Nuevo"" (selector de cambio de estado en detalle de asunto)",2017-03-14 17:08:52 UTC,2017-03-14 17:18:43 UTC,591.128,11 - 2017
 687,"US93 - Mostrar Indicador para asunto en estado ""nuevo"", visible en la lista de asuntos",2017-03-14 16:19:17 UTC,2017-03-14 17:13:33 UTC,3255.766,11 - 2017
-228,Todos los selects deben tener un option con selected por defecto,2016-06-29 14:22:10 UTC,2017-03-14 11:08:01 UTC,22279551.025,11 - 2017
-513,"US46 - Al hacer cambios en el detalle de un asunto y si da un error de servidor, debe mostrarse un toast además del icono de warning,",2017-03-13 18:00:08 UTC,2017-03-13 18:47:08 UTC,2820.547,11 - 2017
 673,US73 - El administrador puede crear un nuevo canal,2017-03-08 16:21:52 UTC,2017-03-14 16:58:47 UTC,520614.65,11 - 2017
-682,No se pueden eliminar los recordatorios de algunos asuntos (887 en demo),2017-03-13 15:21:42 UTC,2017-03-13 16:03:34 UTC,2512.174,11 - 2017
 608,Cambiar icono y título del menú de qlik (cuadro de mando) y añadir un submenú en el sidebar,2017-02-13 18:52:32 UTC,2017-02-13 18:52:45 UTC,13.679,07 - 2017
 563,Cambiar los id de autoincrement a UUIDs,2017-01-26 08:44:19 UTC,2017-02-01 12:27:31 UTC,531791.595,05 - 2017
 577,Spike: fake del servicio http para que trabaje con listas de objetos en localStorage,2017-01-29 17:32:35 UTC,2017-01-29 17:36:54 UTC,259.494,04 - 2017
