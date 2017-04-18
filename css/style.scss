@@ -6,12 +6,18 @@
 
 @import "settings";
 
+body {
+  margin: 0 auto;
+}
 
 .header {
   @include grid-container;
+  background-color: #e6e6e6;
+  padding: 1.5rem 0;
 
   .header__title {
     @include grid-column(12);
+    margin-bottom: 0;
   }
 }
 
@@ -20,14 +26,43 @@
 
   .metric__title {
     @include grid-column(12);
+
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    margin: 1rem ;
+    border-bottom: 1px solid hsla(0,0%,4%,.25);
+
+    small {
+      color: #cacaca;
+      line-height: 0;
+    }
   }
 
   .metric__stat {
     @include grid-column(4);
+
+    padding: 1rem;
+    border: 1px solid hsla(0,0%,4%,.25);
+  }
+
+  .metric__stat-value {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .metric__stat--primary {
+    background-color: #def0fc;
   }
 
   .metric__graph {
     @include grid-column(12);
+
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid hsla(0,0%,4%,.25);
+    border-radius: 0;
+    position: relative;
+    background-color: #fff;
   }
 }
 
