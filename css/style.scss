@@ -1,0 +1,48 @@
+@import "normalize";
+
+@import "bourbon";
+@import "neat";
+@import "base";
+
+@import "settings";
+
+
+.header {
+  @include grid-container;
+
+  .header__title {
+    @include grid-column(12);
+  }
+}
+
+.metric {
+  @include grid-container;
+
+  .metric__title {
+    @include grid-column(12);
+  }
+
+  .metric__stat {
+    @include grid-column(4);
+  }
+
+  .metric__graph {
+    @include grid-column(12);
+  }
+}
+
+.dataset {
+  @include grid-container;
+
+  .dataset__raw-data {
+    @include grid-column(12);
+  }
+}
+
+.footer {
+  @include grid-container;
+
+  .footer__section {
+    @include grid-column(6);
+  }
+}

@@ -2,3 +2,6 @@
 source "https://rubygems.org"
 
 gem "ruby-trello"
+
+gem "neat"
+gem "bitters"
