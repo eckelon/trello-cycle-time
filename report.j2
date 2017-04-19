@@ -22,7 +22,7 @@
 
       <div class="metric__stat metric__stat--primary">
         <h5>This week
-          <span class="float-right"> {{ results[0].period }} </span>
+          <span class="metric__period"> {{ results[0].period }} </span>
         </h5>
 
         <div class="metric__stat-value" title="{{ (results[0].cycle_time / 24).round(2) }} days">
@@ -54,7 +54,7 @@
 
       <div class="metric__stat metric__stat-primary">
         <h5>This week
-          <span class="float-right"> {{ results[0].period }} </span>
+          <span class="metric__period"> {{ results[0].period }} </span>
         </h5>
         <div class="metric__stat-value">
           {{ results[0].throughput.round(2) }} cards
@@ -86,7 +86,7 @@
           <p>Crafted with <i class="fi-heart"></i> by <a href="http://codingstones.com">The Coding Stones</a></p>
         </div>
 
-        <div class="footer__section">
+        <div class="footer__section footer__section--secondary">
           <p class="text-right">Generated at: {{ now.strftime("%Y-%m-%d %H:%M") }}</p>
         </div>
       </div>
