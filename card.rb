@@ -1,5 +1,5 @@
 class Card
-  attr_reader :id, :short_id, :name, :url, :started_on, :finished_on
+  attr_reader :id, :short_id, :name, :url, :started_on, :finished_on, :members
 
   def initialize(args)
     @id = args[:id]
@@ -8,6 +8,7 @@ class Card
     @url = args[:url]
     @started_on = args[:started_on]
     @finished_on = args[:finished_on]
+    @members = args[:members]
   end
 
   def cycle_time
@@ -16,5 +17,9 @@ class Card
 
   def finished_on_week
     finished_on.strftime("%W - %Y")
+  end
+
+  def usernames
+    members
   end
 end

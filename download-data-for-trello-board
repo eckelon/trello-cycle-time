@@ -29,10 +29,10 @@ cards = card_collection.finished_cards_for(board_name)
 
 csv_filename_closed_tasks = "#{board_name.gsub(' ', '').downcase}.csv"
 CSV.open(csv_filename_closed_tasks, 'wb') do |csv|
-  csv << [:id, :name, :started_on, :finished_on, :cycle_time, :finished_on_week]
+  csv << [:id, :name, :started_on, :finished_on, :cycle_time, :finished_on_week, :usernames]
   cards.each do |card|
     unless card.finished_on.nil?
-      csv << [card.short_id, card.name, card.started_on, card.finished_on, card.cycle_time, card.finished_on_week]
+      csv << [card.short_id, card.name, card.started_on, card.finished_on, card.cycle_time, card.finished_on_week, card.usernames]
     end
   end
 end

@@ -6,7 +6,6 @@ Trello.configure do |config|
   config.member_token = ENV['TRELLO_MEMBER_TOKEN']
 end
 
-
 class TrelloCardCollection
   def finished_cards_for(board_name)
     boards = Trello::Board.all
@@ -26,7 +25,8 @@ class TrelloCardCollection
           name: card.name,
           url: card.url,
           started_on: calculate_started_on_from(card, actions),
-          finished_on: calculate_finished_on_from(actions)
+          finished_on: calculate_finished_on_from(actions),
+          members: get_usernames_by_card(card)
         )
       end
       result.concat(cards)
@@ -34,9 +34,20 @@ class TrelloCardCollection
     result
   end
 
-  private
+  private def get_usernames_by_card(card)
+    usernames = ''
+    card.member_ids.each do |member_id|
+      begin
+        username = Trello::Member.find(member_id).username
+      rescue
+        username = member_id
+      end
+      usernames.concat(username).concat(';')
+    end
+    usernames
+  end
 
-  def calculate_started_on_from(card, actions)
+  private def calculate_started_on_from(card, actions)
     started_on = nil
     actions.each do |action|
       if action_for_card_being_moved_to_doing? action
