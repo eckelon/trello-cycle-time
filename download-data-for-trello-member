@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'active_support/core_ext/date/calculations'
+require_relative 'trello_card_collection'
+
+require 'erb'
+require 'csv'
+
+options = {}
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: trello-cycle_time [options]"
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+
+  opts.on('-u', '--user USER_NAME') do |user_name|
+    options[:user_name] = user_name
+  end
+
+  opts.on('-d', '--date DATE') do |requested_date|
+    options[:requested_date] = requested_date
+  end
+end.parse!
+
+raise OptionParser::MissingArgument.new(:user_name) if options[:user_name].nil?
+
+
+user_name = options[:user_name]
+requested_date = options[:requested_date]
+
+
+if (requested_date.blank?)
+  requested_date = Date.yesterday
+end
+
+card_collection = TrelloCardCollection.new
+
+actions = card_collection.get_member_activity(user_name)
+
+csv_filename_member_actions = "#{user_name}_#{requested_date}.csv"
+text_filename_member_actions = "#{user_name}_#{requested_date}.md"
+
+File.open(text_filename_member_actions, 'w') do |file|
+  file.write("##{requested_date} activity for #{user_name}\n")
+  actions.each do |action|
+    if requested_date <= action.date and not action.data['text'].blank?
+      file.write("- #{action.board.name} (##{action.data['card']['idShort']}) ")
+      file.write("| card_name: #{action.data['card']['name']} | comment: #{action.data['text']}")
+      file.write("\n")
+    end
+  end
+end

@@ -34,6 +34,10 @@ class TrelloCardCollection
     result
   end
 
+  def get_member_activity(user_name)
+    Trello::Member.find(user_name).actions
+  end
+
   private def get_usernames_by_card(card)
     usernames = ''
     card.member_ids.each do |member_id|
